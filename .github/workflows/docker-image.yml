@@ -10,8 +10,19 @@ env:
   webapp_name: openhackxv61mxh2userjava
   build_name: User Java
   webv_path: apis/user-java/webvalidate
-
+  
+  
 on:
+  workflow_dispatch:
+    inputs:
+      name:
+        description: 'Person to greet'
+        required: true
+        default: 'Mona the Octocat'
+      home:
+        description: 'location'
+        required: false
+        default: 'The Octoverse'
   push:
     branches: [ master ]
     paths: 
