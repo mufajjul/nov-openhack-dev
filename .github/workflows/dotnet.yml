@@ -12,6 +12,17 @@ env:
   buildwebapp_name: POI
 
 on:
+  workflow_dispatch:
+    inputs:
+      name:
+        description: 'Manual trigger . net'
+        required: true
+        default: ''
+      home:
+        description: 'location'
+        required: false
+        default: ''
+
   push:
     branches: [ master ]
     paths: 
