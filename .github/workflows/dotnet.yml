@@ -8,7 +8,7 @@ env:
   staging_url: https://openhackxv61mxh2poi-staging.azurewebsites.net
   prod_url: https://openhackxv61mxh2poi.azurewebsites.net
   resource_group: openhackxv61mxh2rg
-_name: openhackxv61mxh2poi
+  name: openhackxv61mxh2poi
   buildwebapp_name: POI
 
 on:
